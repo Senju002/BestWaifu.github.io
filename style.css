@@ -1,0 +1,81 @@
+.navbar{
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(240,178,188);
+    font-size: 1.2em;
+}
+
+.navbar-brand{
+    font-size: 1.5em!important;
+    color: rgb(169,0,0)!important;
+    font-weight: bold;
+}
+
+.navbar li a{
+    margin-right: 30px;
+    color: rgb(169,0,0)!important;    
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: rgb(169,0,0)!important;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 960px) {
+    .navbar .navbar-nav .nav-link {
+        padding: 1em 0.7em;
+    }
+    .navbar {
+        padding: 0;
+    }
+    .navbar .navbar-brand {
+        padding: 0 0.7em;
+    }
+}
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: rgb(169,0,0);
+    color: transparent;
+    width: 0%;
+    content: '';
+    height: 3px;
+    transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  background-color: rgb(240,178,188);
+  height: 600px;
+  padding-bottom: 1px;
+}
+
+#about{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2) ),url(https://images6.alphacoders.com/982/thumb-1920-982014.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#Gallery {
+  background-color: rgb(240,178,188);
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-text{
+    background-color: rgb(240,178,188);
+    color: rgb(169,0,0);
+    padding-bottom: 40px;
+    margin-bottom: 0px;
+}
